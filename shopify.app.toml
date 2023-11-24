@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "first app"
+client_id = "878aa5eb24da91754619d0f63c844ea3"
+application_url = "https://believed-podcast-rational-anywhere.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://believed-podcast-rational-anywhere.trycloudflare.com/auth/callback",
+  "https://believed-podcast-rational-anywhere.trycloudflare.com/auth/shopify/callback",
+  "https://believed-podcast-rational-anywhere.trycloudflare.com/api/auth/callback",
+  "https://believed-podcast-rational-anywhere.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "arjun-store-test.myshopify.com"
